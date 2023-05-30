@@ -1,0 +1,147 @@
+@font-face {
+    font-family: Lato-Black;
+    src: url(/Fonts/lato/Lato-Black.ttf);
+}
+
+@font-face {
+    font-family: SourceSansPro-Regular;
+    src: url(/Fonts/source-sans-pro/SourceSansPro-Regular.otf);
+}
+
+h1{
+    font-family: Lato-Black;
+    text-align: center;
+}
+
+h2, h3 {
+    font-family: Lato-Black;
+    color: rgb(62, 64, 64);
+    text-align: center;
+}
+
+p, ul, form {
+    font-family: SourceSansPro-Regular;
+    color: rgb(100, 104, 104)
+}
+
+body { 
+    background-color: rgb(254, 254, 254);
+    width: 100%;
+
+}
+
+nav{
+    background-color: rgb(254, 254, 254);
+    width: 100%;
+}
+
+nav a{
+    display: block;
+    /* no sirve el padding */
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(210, 142, 142);
+}    
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    /* no sirve el flex end */
+    justify-content:flex-end;
+    
+}
+
+nav li{
+    flex: 1 1 0;
+}
+
+nav a:hover{
+    color: rgb(210, 45, 45);
+}
+
+
+.hero_banner{
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 300px;
+    background-image: url(/images/Tasa\ Gatito\ Flores.png);
+    text-align: center;
+    image-rendering: optimizeSpeed;
+    
+}
+
+.bloque_texto{
+    width: 100%;
+    height: 160px;
+    text-align: center;
+}
+
+.product_container{
+    display: grid;
+    grid-template-areas: 
+    "title title title"
+    "product_1 product_2 product_3";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr;
+    grid-column-gap: 20px;
+    padding: 0px 30px 60px 30px;
+    width: 100%;
+    background-color: rgb(210, 142, 142);
+    text-align: center;
+    align-items: center;
+}
+
+.title{
+    grid-area: title;
+}
+
+
+.product_1{
+    grid-area: product_1;
+    border: 1px solid rgb(195, 95, 95);
+    width: 80%;
+    height: auto;
+    background-color: aliceblue;
+    justify-self: end;
+    padding: 20px;
+}
+
+.product_2{
+    grid-area: product_2;
+    border: 1px solid rgb(195, 95, 95);
+    width: 80%;
+    height: auto;
+    background-color: aliceblue;
+    justify-self: end;
+    padding: 20px;
+}
+
+.product_3{
+    grid-area: product_3;
+    border: 1px solid rgb(195, 95, 95);
+    width: 80%;
+    height: auto;
+    background-color: aliceblue;
+    justify-self: end;
+    padding: 20px;
+}
+
+#form-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    height: 320px;
+    padding-block: 10px;
+    border: 15px;
+    border-color:rgb(195, 95, 95);
+}
+
+.form, details{
+    width: 600px;
+    height: 160px
+}
+
